@@ -240,6 +240,7 @@ float: right;
 .th p {
     font-size: 1.05em !important;    font-weight: 400;
     color: #585856;
+    text-wrap: wrap;
 }
 
 
@@ -329,14 +330,6 @@ float: right;
     gap: 1em; */
 }
 
-.p-wrap {
-    text-wrap: wrap;
-    font-weight: 500;
-    width: 80%;
-    /* background: red */
-}
-
-
 .table-parent-ais {
     /* background: green !important; */
     /* overflow: auto; */
@@ -344,46 +337,6 @@ float: right;
     width: 100% !important;
 
 }
-
-.table-parent-ais figure {
-    /* background: red; */
-    width: 100%;
-}
-
-.table-doc-ais tr th {
-    /* background: yellow; */
-    /* border-right: 1px solid black; */
-    padding: 0.2em 0.8em;
-    font-weight: 550;
-
-}
-
-.table-doc-ais tr th:nth-child(3) {
-    /* background: red; */
-    width: 40%;
-}
-
-.table-doc-ais tr th:last-child {
-    /* background: red; */
-}
-
-.table-doc-ais tr th:nth-child(2) {
-    /* background: green; */
-    text-align: left;
-}
-
-.table-doc-ais tr th input[type='checkbox'] {
-    width: 1.2em;
-    height: 1.2em;
-    accent-color: var(--primary);
-}
-
-.table-doc-ais tr th:last-child {
-    /* background: yellow; */
-    /* border-right: none; */
-
-}
-
 .red {
     color: rgb(206, 22, 22);
 }

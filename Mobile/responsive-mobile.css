@@ -1,4 +1,22 @@
+@media screen and (max-width: 700px) {
+    .tr-ais{
+        flex-direction: column;
+    }
 
+    .th {
+        flex: 0 100% !important;
+    width: 100%;
+    }
+    
+.th p {
+    /* background: red; */
+    text-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+}
 @media screen and (max-width: 930px) {
     html {
         font-size: 0.8em;
