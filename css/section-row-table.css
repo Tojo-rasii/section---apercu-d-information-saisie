@@ -109,13 +109,18 @@
     padding: 0.8em 2.5em;
     display: flex;
     flex-direction: column;
+    /* background: red; */
     gap: 1em;
+    width: 96.5%;
+float: right;
 }
 
 .row-lab {
     /* background: red; */
+    /* margin-left: 3em; */
     height: max-content;
     width: 100%;
+    /* float: right; */
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -169,7 +174,9 @@
     border-radius: 0;
     color:#6b6b6b;
     margin-top:0.5em;
+    /* float: right; */
     line-height:1.5em;
+    /* margin-left: 3em; */
     cursor:default;
 }
 
@@ -190,61 +197,34 @@
 }
 
 
-.fig-table {
+.fig-table-ais {
     /* background: red; */
     padding: 0.8em 2.5em;
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 1.5em;
+    margin-left: 3em;
 
 }
 
 /* TABLE */
-#modale-apercu-secondary {
-    background: #0000005d;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    left: 0;
-    display: none;
-}
 
-#modale-apercu-secondary section {
-    width: 70%;
-    height: max-content;
-    margin: 0 auto;
-    background: #fff;
-    margin-top: 1em;
-    margin-bottom: 1em;
 
-}
-
-.row-width {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    row-gap: 1.5em;
-}
-
-.row-check {
-    justify-content: space-between !important;
+.th-icon-ais{
     /* background: red; */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    /* gap: 0.5em; */
+    flex: 0 5em !important;
 }
-
 .row-th-ais {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 0.5em;
+    /* background: green; */
+    margin: 0 auto;
+}
+
+.f-bold-ais{
+    font-weight: 700 !important;
 }
 
 .row-th-ais i {
@@ -254,20 +234,12 @@
     /* gap: 0.5em; */
 }
 
-.row-th-ais p {
-    font-size: 1.05em;
-}
-
-.pdf {
-    /* width: 100%; */
-    /* background: red; */
-}
-
-.pdf p {
-    font-weight: 400;
+.th p {
+    font-size: 1.05em !important;    font-weight: 400;
     color: #585856;
-    font-size: 1.05em;
 }
+
+
 
 .row-text {
     display: flex;
@@ -314,6 +286,7 @@
     align-items: center;
     border: 1px solid #58585654;
     justify-content: center;
+    border-radius: 0.5em;
     align-items: center;
     justify-content: space-between;
     padding: 0 !important;
@@ -342,15 +315,15 @@
     flex: 1;
     height: 4.5em;
     max-height: 100%;
-    border: 1px solid #58585654;
+    border: 0.5px solid #58585654;
 
 }
 
 .t-head-ais {
     /* background: red; */
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 1em; */
 }
 
 .p-wrap {
