@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/section-information-saisie.css">
 <link rel="stylesheet" href="mobile/section-information-saisie-desktop.css">
     <link rel="stylesheet" href="desktop/section-information-saisie-desktop.css">
+    <link rel="stylesheet" href="css/popSauvegarde.css">
+    <link rel="stylesheet" href="css/popSoumis.css">
 
 
 </head>
@@ -587,14 +589,62 @@
                     <button class="bg-silver">Précédent</button>
                 </div>
                 <div>
-                    <button class="bg-silver">Sauvegarder</button>
+                    <button class="bg-silver bg-save">Sauvegarder</button>
                     <button class="btn-green">Soumettre votre candidature</button>
                 </div>
             </picture>
-        </section>
+            
+        <!-- Popup -->
+<div class="popup popup-hidden">
+    <div class="popup-content">
+        <i>
+            <svg width="230" height="193" viewBox="0 0 237 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="100" cy="100" r="100" fill="#03A84E"/>
+                <path d="M91.7218 155.877L20.2217 86.581C15.9261 82.4178 15.9261 75.6677 20.2217 71.5041L35.7777 56.4272C40.0733 52.2636 47.0385 52.2636 51.3341 56.4272L99.5 103.108L202.666 3.12239C206.961 -1.0408 213.927 -1.0408 218.222 3.12239L233.778 18.1993C238.074 22.3625 238.074 29.1126 233.778 33.2762L107.278 155.878C102.982 160.041 96.0173 160.041 91.7218 155.877Z" fill="white"/>
+                <path d="M50.9861 56.7862L50.9861 56.7862L99.152 103.467L99.5 103.804L99.848 103.467L203.014 3.48143C207.116 -0.493811 213.773 -0.493811 217.874 3.48143L233.43 18.5584C237.523 22.5251 237.523 28.95 233.43 32.9172L106.93 155.519C102.828 159.494 96.1714 159.494 92.0698 155.518L91.7218 155.877L92.0697 155.518L20.5697 86.222C16.4768 82.2552 16.4768 75.8303 20.5697 71.8631L36.1257 56.7862L35.7777 56.4272L36.1257 56.7862C40.2273 52.8106 46.8844 52.8106 50.9861 56.7862Z" stroke="#585856" stroke-opacity="0.5"/>
+                </svg>
+                
+        </i>
+        <h1>Candidature soumise avec succès !</h1>
+        <p>Votre candidature a bien été envoyée. Vous serez informé si votre dossier est retenu ou non par le propriétaire. Vous pouvez suivre l'évolution de votre candidature dans votre espace personnel.</p>
+        <button id="close-popups" class="btn-blue">Retour à l’annonce</button>
+    </div>
+</div>
+
+<!-- Sauvegarde -->
+ <!-- Popup pour Sauvegarder -->
+<div class="popup-save hidden ">
+    <div class="popup-content-save">
+        <div>
+        <i>
+            <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M58 67.0312C58 71.4252 54.4112 75 50 75C45.5888 75 42 71.4252 42 67.0312C42 62.6373 45.5888 59.0625 50 59.0625C54.4112 59.0625 58 62.6373 58 67.0312ZM42.926 26.5101L44.286 53.6038C44.3499 54.8761 45.4041 55.875 46.683 55.875H53.317C54.5959 55.875 55.6501 54.8761 55.714 53.6038L57.074 26.5101C57.1425 25.1445 56.0496 24 54.677 24H45.323C43.9504 24 42.8575 25.1445 42.926 26.5101Z" fill="#DC3545" fill-opacity="0.6"/>
+                <circle cx="50" cy="50" r="48.5" stroke="#DC3545" stroke-opacity="0.6" stroke-width="3"/>
+                </svg>
+                
+        </i>
+       </div>
+
+       <div>
+        <h1>Êtes vous sur de vouloir annuler cette candidature ?</h1>
+        </div>
+       <div>
+            <p>Vous êtes sur le point de quitter ce formulaire sans avoir soumis votre candidature. Cela signifie que toutes les informations saisies seront perdues. Souhaitez-vous vraiment annuler votre candidature ?</p>
+        </div>
+
+       <div class="row-btn-pop-ais">
+        <button class="close-popup btn-blue">Non</button>
+        <button class="save-btn">Oui</button>
+       </div>
+    </div>
+</div>
+
+
 </main>
 </div>
 
+<script src="javascript/popSauvegarde.js"></script>
+<script src="javascript/popSoumis.js"></script>
 <script src="javascript/textarea-show.js"></script>
 </body>
 </html>

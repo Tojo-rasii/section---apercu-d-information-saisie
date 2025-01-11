@@ -7,5 +7,7 @@
         width: 86em !important;
     }
 
-
+    .popup-content {
+       width: 70em !important;
+    }
 }
