@@ -10,4 +10,7 @@
     .popup-content {
        width: 70em !important;
     }
+    .popup-content-save  {
+       width: 70em !important;
+    }
 }
