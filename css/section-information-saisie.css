@@ -1,6 +1,7 @@
 #main-saisie{
 background: #fff;
-padding-bottom: 3em;
+padding-bottom:2em !important;
+
 }
 .section-article-picture-ais {
     background: var(--primary);
