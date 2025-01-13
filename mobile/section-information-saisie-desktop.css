@@ -16,6 +16,24 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+.popup-content {
+    width: 90% !important;
+ }
+
+ .popup-content i svg{
+    width: 10em;
+    height: 10em;
+}
+
+.popup-content-save {
+    width: 90% !important;
+ }
+
+ .popup-content-save i svg{
+    width: 10em;
+    height: 10em;
+}
 }
 @media screen and (max-width: 930px) {
     html {
