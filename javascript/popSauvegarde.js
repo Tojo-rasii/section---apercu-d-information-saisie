@@ -20,4 +20,18 @@
     }
 
 });
+    const saveBtn = document.querySelector(".save-btn");
+    const toast = document.getElementById("toast");
 
+    saveBtn.addEventListener("click", () => {
+        // Afficher le toast
+        toast.classList.add("show");
+
+        // Masquer le popup
+        document.querySelector(".popup-save").classList.add("hidden");
+
+        // Masquer le toast après 3 secondes
+        setTimeout(() => {
+            toast.classList.remove("show");
+        }, 3000);
+    });
