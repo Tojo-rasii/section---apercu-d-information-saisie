@@ -33,5 +33,5 @@
         // Masquer le toast après 3 secondes
         setTimeout(() => {
             toast.classList.remove("show");
-        }, 3000);
+        }, 1000);
     });
